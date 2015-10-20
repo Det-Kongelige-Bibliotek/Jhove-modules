@@ -1,0 +1,12 @@
+*.class
+.classpath
+.project
+.settings/
+checkstyle.xml
+*~
+# Package Files #
+*.jar
+*.war
+*.ear
+
+target/
