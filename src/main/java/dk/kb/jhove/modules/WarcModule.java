@@ -56,12 +56,12 @@ public class WarcModule extends ModuleBase {
 
 	private static final String NAME = "WARC-kb";
 	private static final String RELEASE = "0.1";
-	private static final int[] DATE = {2015, 10, 7};
+	private static final int[] DATE = {2015, 11, 24};
 	private static final String[] FORMAT = {
 		"WARC", "WARC, Web ARChive file format"
 	};
 	private static final String COVERAGE = "WARC, 28500:2009";
-	private static final String[] MIMETYPE = {"application/warc"};
+	private static final String[] MIMETYPE = {"application/warc", "application/warc-fields"};
 	private static final String WELLFORMED = "";
 	private static final String VALIDITY = "The file is well-formed";
 	private static final String REPINFO = "";
