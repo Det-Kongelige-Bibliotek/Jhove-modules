@@ -1,13 +1,10 @@
 package dk.kb.jhove.modules;
 
 import java.io.EOFException;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.util.HashMap;
-import java.util.ListIterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -29,12 +26,9 @@ import edu.harvard.hul.ois.jhove.ErrorMessage;
 import edu.harvard.hul.ois.jhove.Identifier;
 import edu.harvard.hul.ois.jhove.IdentifierType;
 import edu.harvard.hul.ois.jhove.InfoMessage;
-import edu.harvard.hul.ois.jhove.InternalSignature;
 import edu.harvard.hul.ois.jhove.JhoveException;
 import edu.harvard.hul.ois.jhove.ModuleBase;
 import edu.harvard.hul.ois.jhove.RepInfo;
-import edu.harvard.hul.ois.jhove.Signature;
-import edu.harvard.hul.ois.jhove.SignatureUseType;
 
 /**
  * JHOVE module for identifying, validating and characterizing WARC files.
@@ -56,7 +50,7 @@ public class WarcModule extends ModuleBase {
 
 	private static final String NAME = "WARC-kb";
 	private static final String RELEASE = "0.1";
-	private static final int[] DATE = {2015, 11, 24};
+	private static final int[] DATE = {2015, 11, 25};
 	private static final String[] FORMAT = {
 		"WARC", "WARC, Web ARChive file format"
 	};
